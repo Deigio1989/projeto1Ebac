@@ -1,0 +1,132 @@
+/*reset*/
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+/*containers*/
+.container{
+    max-width: 1260px;
+    width: 100%;
+    margin: 0 auto;
+
+}
+/*geral*/
+body,input,textarea{
+    font-family: 'Roboto Mono', monospace;
+}
+/*header*/
+header{
+    padding: 16px 0px;
+    background-color:rgb(9, 94, 128) ;
+    color: white;
+    font-family: 'Orbitron', sans-serif;
+}
+header h1{
+    text-transform: uppercase;
+    font-weight: 800;
+}
+header .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header nav li{
+    display: inline;
+    margin-left: 16px;
+    font-size: 20px;
+}
+header nav li a{
+    color: white;
+    text-decoration: none;
+}
+
+/*main*/
+
+/* preferi reescrever aqui, em vez de sobrescrever porque fica mais fácil de me organizar*/
+section .container{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+section{
+    padding: 24px 0px;
+}
+section h2{
+    color: white;
+    background-color: rgb(32, 29, 29);
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-bottom: 16px;
+    font-family: 'Orbitron', sans-serif;
+}
+section h3{
+    font-family: 'Orbitron', sans-serif;
+    margin-bottom: 16px;
+    font-weight: normal;
+}
+section p {
+    margin-bottom: 8px;
+    color:rgb(48, 53, 58) ;
+}
+.storefront{
+    height: 400px;
+    margin-right: 32px;
+}
+.brands-list img{
+    height: 50px;
+}
+.brands-list li{
+    display: inline;
+    margin-right: 7px;
+    float: right;
+}
+.social-links img{
+    height: 24px;
+}
+.social-links li{
+    display: inline;
+    margin-right: 8px;
+}
+.social-links li a{
+    text-decoration: none;
+} 
+#contact .container {
+    display: block;
+
+}
+.contact-methods {
+    display: flex;
+    justify-content: space-between;
+}
+form input,form textarea,form button{
+    display: block;
+    width: 320px;
+    margin-bottom: 8px;
+    padding: 8px;
+}
+form button{
+    background-color:rgb(9, 94, 128) ;
+    color: #fff;
+    font-family: 'Orbitron', sans-serif;
+    border: none;
+    cursor: pointer;
+}
+form button:hover{
+    background-color:rgb(69, 145, 175) ;
+}
+
+form textarea{
+    resize:none;
+    height: 180px;
+}
+
+input:focus , textarea:focus{
+    outline-color: rgb(9, 94, 128) ;
+}
+
+footer{
+    background-color:rgb(9, 94, 128) ;
+    color: #fff;
+    padding: 16px 0px;
+}
