@@ -15,24 +15,41 @@
 body,input,textarea{
     font-family: 'Roboto Mono', monospace;
 }
+html{
+    scroll-padding-top: 100px;
+}
+
 /*header*/
 header{
     padding: 16px 0px;
     background-color:rgb(9, 94, 128) ;
     color: white;
     font-family: 'Orbitron', sans-serif;
+    position: sticky;
+    top: 0;
+    width: 100%;
 }
 header h1{
+    font-size: 50px;
     text-transform: uppercase;
     font-weight: 800;
+    margin-bottom: -4px;
+}
+header p{
+    color: rgb(204, 206, 224);
+    font-size: 15px;
+    padding-left: 134px;
 }
 header .container{
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
+nav ul{
+    display: flex;
+}
 header nav li{
-    display: inline;
+    list-style: none;
     margin-left: 16px;
     font-size: 20px;
 }
@@ -40,25 +57,35 @@ header nav li a{
     color: white;
     text-decoration: none;
 }
-
+header nav li a:hover{
+    color:rgb(204, 206, 224);
+}
 /*main*/
-
-/* preferi reescrever aqui, em vez de sobrescrever porque fica mais fácil de me organizar*/
-section .container{
+section .container, section .contactContainer , .articles{
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
 }
+
 section{
     padding: 24px 0px;
 }
 section h2{
     color: white;
-    background-color: rgb(32, 29, 29);
-    padding-left: 5px;
-    padding-right: 5px;
+    background-image: url(./bg.png);
+    background-repeat: no-repeat ;
+    background-size: 1270px 40px;
+    padding: 5px 5px 10px 10px;
     margin-bottom: 16px;
     font-family: 'Orbitron', sans-serif;
+}
+#contactBg
+{
+    flex: 1;
+}
+#contactBg h2
+{
+    background-size: 95% 40px ;
 }
 section h3{
     font-family: 'Orbitron', sans-serif;
@@ -70,8 +97,9 @@ section p {
     color:rgb(48, 53, 58) ;
 }
 .storefront{
-    height: 400px;
+    height: 250px;
     margin-right: 32px;
+    border-radius: 5%;
 }
 .brands-list img{
     height: 50px;
@@ -125,8 +153,26 @@ input:focus , textarea:focus{
     outline-color: rgb(9, 94, 128) ;
 }
 
+#products a{
+    text-decoration: none;
+    color: rgb(9, 94, 128) ;
+}
+#products a:hover{
+    text-decoration:underline;
+    color: rgb(19, 63, 80) ;
+}
+#products article img{
+    height: 200px;
+}
+#products a:hover img{
+    opacity: 70%;
+}
+.productsContainer{
+    width: 100%;
+}
+/*footer*/
 footer{
-    background-color:rgb(9, 94, 128) ;
+    background-color:black ;
     color: #fff;
     padding: 16px 0px;
 }
