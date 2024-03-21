@@ -20,7 +20,7 @@
                         <a href="#about">{ Sobre Nós }</a>
                     </li>
                     <li>
-                        <a href="#products">{ Cyberware }</a> 
+                        <a href="#products">{ Jogos }</a> 
                     </li>
                     <li>
                         <a href="#contact">{ Contato }</a> 
@@ -35,18 +35,16 @@
     <main id="main">
         <section id="about">
             <div class="container">
-                <img src="./shopfront.png" class="storefront" alt="fachada da loja G4m3 Sh0p">
+                <img src="./images/1739815_org.jpg" class="storefront" alt="fachada da loja G4m3 Sh0p">
                 <div>
                     <h2>
                         > Sobre nós
                     </h2>
-                    <p>Welcome to V0RT3X, your premier destination for cutting-edge cybernetic implants. We are at the forefront of the technological revolution, offering a wide range of innovative and transformative enhancements that seamlessly merge humanity with advanced machinery.
-                    Our mission is to empower individuals with the ability to unlock their full potential and redefine what it means to be human in the digital age. <i>(escrito com Chat GPT)</i></p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo sint doloremque odit enim.</p>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam ipsa est odio enim iusto! At, quaerat explicabo! Aliquid eligendi recusandae sapiente, pariatur minima, culpa debitis ipsum suscipit molestias atque ea?</p>
                     <ul class="brands-list">
-                        <li><img src="./logo (1).jpg" alt="logo Gentek"></li>
-                        <li><img src="./logo (3).jpg" alt="logo Blume"></li>
-                        <li><img src="./logo (4).jpg" alt="logo Virtucon"></li>
+                        <li><img src="./images/nintendo-switch1393.jpg" alt="logo Switch"></li>
+                        <li><img src="./images/PS5-Logo-CES_01-06-20_002.jpg" alt="logo PS5"></li>
+                        <li><img src="./images/baixados.png" alt="logo SeriesX"></li>
                     </ul>
                 </div>
             </div>
@@ -54,37 +52,31 @@
         <section id="products">
             <div class="container">
                 <div class="productsContainer">
-                    <h2> > Cyb3rW4re</h2>
+                    <h2> > Jogos</h2>
                     <div class="articles">
                         <article>
                             <a href="">
-                                <img src="./braço.png" alt="braço bionico Cobra 2000">
-                                <h4>Braço Cobra 2000</h4>
+                                <img src="./images/13482.jpg" alt="Playstation 5">
+                                <h4>Playstation 5</h4>
                             </a>
                         </article>
                         <article>
                             
                             <a href="">
-                                <img src="./implante.png" alt="implante cerebral H3x-K"> 
-                                <h4>Implante h3X-K</h4> 
+                                <img src="./images/microsoft-console-xbox-series-x-1tb-forza-horizon-5-premium.jpg" alt="Xbox"> 
+                                <h4>Xbox Series X</h4> 
                             </a>
                         </article>
                         <article>
                             <a href="">
-                                <img src="./mão.png" alt="braço biônico Predator-Handshake">
-                                <h4>Predator-Handshake</h4>
+                                <img src="./images/switch.jpg" alt="Switch">
+                                <h4>Nintendo Switch</h4>
                             </a>
                         </article>
                         <article>
                             <a href="">
-                                <img src="./perna.png" alt="Perna Biônica Bolt 2000">
-                                <h4>Perna Bolt 2000</h4>
-                            </a>
-                        </article>
-                        <article>
-                            <a href="">
-                                <img src="./implante2.png" alt="implante auditivo RTX">
-                                <h4>Implante RTX</h4>
+                                <img src="./images/519QI4dRnkL._AC_UF1000,1000_QL80_.jpg" alt="Steam Deck">
+                                <h4>Steam Deck</h4>
                             </a>
                         </article>
                     </div>       
@@ -109,17 +101,17 @@
                                 <ul class="social-links">
                                     <li>
                                         <a href="#" title="Siga-nos no Instagram">
-                                            <img src="./instagram.png" alt="Logo do Instagram">
+                                            <img src="./images/instagram.png" alt="Logo do Instagram">
                                         </a>
                                     </li>
                                     <li>
                                         <a href="#" title="Siga-nos no Facebook">
-                                            <img src="./facebook.png" alt="Logo do Facebook">
+                                            <img src="./images/facebook.png" alt="Logo do Facebook">
                                         </a>
                                     </li>
                                     <li>
                                         <a href="#" title="Visite nosso canal no Youtube">
-                                            <img src="./youtube.png" alt="Logo do Youtube">
+                                            <img src="./images/youtube.png" alt="Logo do Youtube">
                                         </a>
                                     </li>
                                 </ul>
@@ -130,9 +122,9 @@
                     <div>
                         <h3>Fale conosco</h3>
                         <form action="text">
-                            <input type="text" placeholder="Seu nome" required>
-                            <input type="email" placeholder="Seu e-mail" required>
-                            <input type="tel" placeholder="Seu telefone (opcional)">
+                            <input class="form-campo" type="text" placeholder="Seu nome" required>
+                            <input class="form-campo" type="email" placeholder="Seu e-mail" required>
+                            <input class="form-campo" id="campo-telefone" type="tel" placeholder="Seu telefone (opcional)">
                             <textarea placeholder="Sua mensagem" required></textarea>
                             <button type="submit">Enviar</button>
                         </form>
@@ -143,6 +135,7 @@
             </div>
         </section>
     </main>
+
     <footer>
         <div class="container">
             <p>
@@ -150,6 +143,15 @@
             </p>
         </div>
     </footer>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="./jquery.mask.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('#campo-telefone').mask('(00)00000-0000')
+
+        })
+    </script>
 
 </body>
 </html>
